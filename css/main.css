@@ -23,7 +23,8 @@ body {
     font-weight: 500;
 }
 
-.title {
+h1,
+h2 {
     font-weight: 500;
     padding: 10px 0;
 }
