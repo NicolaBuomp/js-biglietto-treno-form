@@ -16,14 +16,14 @@
 <body>
 
     <header>
-        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <i class="fas fa-ticket-alt"></i>
     </header>
 
-    <div class="wrapper">
+    <section class="wrapper">
         <div class="box">
-            <h2 class="title"><i class="fas fa-ticket-alt"></i> Il tuo biglietto </i>
-            </h2>
-            <div class="dati-input">
+            <div id="all-date" class="dati-input">
+                <h1 class="title">ACQUISTA IL TUO BIGLIETTO</h1>
+                <h3>Scopri le nostre offerte</h3>
                 <div class="row">
                     <div class="col">
                         <input id="nome" type="text" name="nome" placeholder="Nome e Cognome">
@@ -40,12 +40,12 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <span id="bottoneGenera"><i class="fas fa-check"></i></span>
-                    <span id="bottoneAnnulla"><i class="fas fa-times"></i></span>
+                <div class="row-btn">
+                    <span id="bottoneGenera" class="btn">Genera</span>
+                    <span id="bottoneAnnulla" class="btn">Annulla</span>
                 </div>
             </div>
-
+            <h1 id="acquistoCompletato" class="hidden">GRAZIE DELL'ACQUISTO!</h1>
             <section id="biglietto" class="hidden">
 
 
@@ -82,11 +82,12 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <span id="bottoneAcquista" class="btn">ACQUISTA</span>
                     </div>
                 </div>
             </section>
         </div>
-    </div>
+    </section>
 
     <footer>
         <h3>Nicola Buompane &copy; 2020</h3>

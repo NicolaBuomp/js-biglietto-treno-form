@@ -8,7 +8,8 @@
 var container = document.getElementById('biglietto');
 var bottoneGenera = document.getElementById('bottoneGenera');
 var bottoneAnnulla = document.getElementById('bottoneAnnulla');
-
+var acquisto = document.getElementById('all-date');
+var acquistoCompletato = document.getElementById('acquistoCompletato');
 
 /**
  * EVENTI
@@ -77,14 +78,18 @@ bottoneAnnulla.addEventListener('click',
         var fasciaEta = document.getElementById('fascia-eta').value = "minorenne";
         //console.log(fasciaEta);
 
-        // Svuotiamo valori della pagina
-        document.getElementById('nome-passeggero').innerHTML = "";
-        document.getElementById('offerta-applicata').innerHTML = "";
-        document.getElementById('carrozza').innerHTML = "";
-        document.getElementById('codice-cp').innerHTML = "";
-        document.getElementById('costo').innerHTML = "";
-
         // Nascondi biglietto
-        container.className = 'Hidden';
+        container.className = 'hidden';
     }
 );
+
+// completo acquisto
+bottoneAcquista.addEventListener('click',
+    function() {
+
+        container.className = 'hidden';
+        acquisto.className = 'hidden';
+        acquistoCompletato.className = 'show';
+
+    }
+)
